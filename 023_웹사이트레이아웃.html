@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트 레이아웃</title>
+    <link rel="stylesheet" href="css/023.css" />
+</head>
+
+<body>
+    <!-- class명 보다 id명이 우선순위 임 -->
+    <div id="wrap">
+        <header class="header" id="header"><!-- 스크립트 영역 지정시 id명 지정이 간편함 -->
+            <h1>
+                <a href="#">YUL CAFE</a>
+            </h1><!-- 로고 -->
+
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴 1</a></li>
+                    <li><a href="#">메뉴 2</a></li>
+                    <li><a href="#">메뉴 3</a></li>
+                    <li><a href="#">메뉴 4</a></li>
+                    <li><a href="#">메뉴 5</a></li>
+                </ul>
+            </nav>
+
+            <div class="util">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div> <!-- .util end -->
+        </header><!-- .header end -->
+
+        <main id="main">
+            <!-- header, footer를 제외한 정보가
+                     들어가는 공간 -->
+
+            <section class="main_visual"><!-- 큰 영역을 나누어줄때 사용 -->
+                <figure>
+                    <img src="img/크리스마스 배경.jpg" alt="크리스마스배경 이미지" />
+                </figure>
+
+                <div>
+                    <h2>메인비쥬얼</h2>
+                    <a href="#">바로가기</a>
+                </div>
+            </section><!-- .main_visual end -->
+
+            <section class="section01">
+                <div class="inner">
+                    <h3>첫번째 섹션 제목</h3>
+                    <div class="list">
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/스타벅스 슈크림 트리 바움쿠헨.jpg" alt="슈크림 트리 바움쿠헨 이미지" />
+                                </figure>
+                                <div>
+                                  <h4>스타벅스 슈크림 트리 바움쿠헨</h4>
+                                    <strong>12,500원</strong>
+                                </div>
+                            </a>
+                        </div><!-- item end1 -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/스타벅스 초콜릿 부쉬드 노엘.jpg" alt="초콜릿 부쉬드 노엘 이미지" />
+                                </figure>
+                                <div>
+                                    <h4>스타벅스 초콜릿 부쉬드 노엘</h4>
+                                    <strong>13,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- item end2 -->
+                        <div class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/스타벅스 눈사람 바움쿠헨.jpg" alt="눈사람 바움쿠헨 이미지" />
+                                </figure>
+                                <div>
+                                    <h4>스타벅스 눈사람 바움쿠헨</h4>
+                                    <strong>7,500원</strong>
+                                </div>
+                            </a>
+                        </div><!-- item end3 -->
+                    </div><!-- list end -->
+                </div> <!-- .inner end -->
+            </section> <!-- .section01 end -->
+
+            <section class="section02">
+                <h3>두번째 섹션 제목</h3>
+                <div class="list">
+                    <div class="item">
+                        <a href="#">
+                            <h4>1</h4>
+                        </a>
+                    </div><!-- .item end1 -->
+                    <div class="item">
+                        <a href="#">
+                            <h4>2</h4>
+                        </a>
+                    </div><!-- .item end2 -->
+                    <div class="item">
+                        <a href="#">
+                            <h4>3</h4>
+                        </a>
+                    </div><!-- .item end3 -->
+                    <div class="item">
+                        <a href="#">
+                            <h4>4</h4>
+                        </a>
+                    </div><!-- .item end4 -->
+                    <div class="item">
+                        <a href="#">
+                            <h4>5</h4>
+                        </a>
+                    </div><!-- .item end5 -->
+                </div><!-- .list end -->
+            </section><!-- .section02 end -->
+        </main><!-- #main end -->
+
+        <footer class="footer" id="footer">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div><!-- .footer_menu end -->
+
+            <div class="footer_info">
+                <ul>
+                    <li>주소 : 부산광역시 연제구 고분로112번길</li>
+                    <li>사업자등록번호 : 1234-3434-2323</li>
+                    <li>대표 : 박나율</li>
+                </ul>
+                <address>
+                    <!-- 웹사이트 연락처 기재, 인라인태그, p태그만 들어갈 수 있음. -->
+                    <p><a href="#">고객센터 : 1234-1234</a></p>
+                    <p><a href="#">문의전화 : 1800-1234</a></p>
+                </address>
+            </div><!-- .footer_info end -->
+            <p>© 2023.parknayul.ALL RIGHTS RESERVED.</p> <!--©, copyright 두개 중 하나만 작성해주면 됨 -->
+        </footer><!-- .footer end -->
+
+    </div> <!-- #wrap end -->
+    <!-- id명은 #으로 표기
+                 중복 사용 불가함
+                 큰 구역을 나눌 때 id명으로 많이 사용함(전체영역) -->
+</body>
+
+</html>
