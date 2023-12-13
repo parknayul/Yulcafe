@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'S-Core Dream 5';
+    src: url('font/에스코어드림/S-CoreDream-5Medium.eot');
+    src: url('font/에스코어드림/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/에스코어드림/S-CoreDream-5Medium.woff2') format('woff2'),
+        url('font/에스코어드림/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
+}
+
+.header {
+    width: 1280px;
+    height: 100px;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 높이의 가운데 정렬 */
+    margin: 0 auto;
+}
+
+.header nav ul li {/* 어떤 요소를 쓰느냐에 따라 선택자가 달라짐 */
+    display: inline-block;
+    margin:0 20px;
+}
+
+.header .util ul {
+    display: flex;
+}
+
+.header .util ul li {
+    margin-left: 20px;
+}
+
+.header .util ul li:first-child {/* 첫번째 li 여백을 0으로 맞추면 동일한 여백을 맞출 수 있음 */
+    margin-left: 0;
+}
+
+/* 🌞🌞메인비주얼-------------------------------------------------- */
+
+.main_visual {
+    /* height: 960px; */
+    height: 100vh;
+    /* vh 브라우저 높이에 대응되는 값 
+        100vh = 100%
+        50vh = 50%*/
+    position: relative;
+}
+
+.main_visual figure{
+    height: 100%; /* 부모영역에 높이값이 없다면 자식(이미지) 높이 값을 받아 올 수 없음 */
+}
+
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_visual div {
+    width: 1280px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* margin:0 atuo; 적용안됨 */
+    transform: translate(-50%, -50%);/* 수직, 수평가운데 정렬 */
+    }
+
+.main_visual div h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color:burlywood;
+}
+
+.main_visual div a {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: burlywood;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+}
+
+
+/* 🌞🌞.section01------------------------------------------ */
+
+.section01 {
+    background: url('../img/크리스마스\ 배경2.jpg') center center / cover ;
+    /* css파일에서 배경이미지 설정시 url('../)로 입력하여
+         이미지 불러올 수 있음 */
+    padding:150px 0;
+}
+
+.section01 .inner {
+    width: 1280px;
+    /* background-color: bisque; */
+    margin: 0 auto;
+}
+
+.section01 .inner h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.section01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section01 .inner .list .item {
+    width: 410px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 1s;
+    position: relative;
+}
+
+.section01 .inner .list .item figure {
+    height: 400px;
+}
+
+.section01 .inner .list .item figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.section01 .inner .list .item div {
+    padding: 30px;
+    position: absolute;
+    bottom:20px;
+    left:0;
+    color:#fff;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.section01 .inner .list .item:hover div{
+    opacity: 0;
+}
+
+.section01 .inner .list .item:hover{
+    transform: scale(1.1);
+}
+
+
+/* 🌞🌞section02------------------------------------------- */
+
+.section02 {
+    margin: 150px 0;
+    text-align: center;
+}
+
+.section02 h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section02 .list .item {
+    width: 250px;
+    height: 250px;
+    background-color: burlywood;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 250px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* 🌞🌞footer------------------------------------------------- */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer .footer_menu {
+    border-bottom: 1px solid #fff;
+    height: 70px;
+    line-height: 70px;
+}
+
+.footer .footer_menu ul{
+    width: 1280px;
+    margin: 0 auto;   
+}
+
+.footer .footer_menu ul li{
+    display: inline-block;
+    margin-right:20px;
+}
+
+.footer .footer_info {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+.footer .footer_info ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .footer_info address p {
+    display: inline-block;
+    margin-right: 20px;
+    font-style: normal;
+}
+
+.footer > p {
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
